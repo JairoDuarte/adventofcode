@@ -1,8 +1,8 @@
 const fs = require('fs');
 
-const getValue = (lign = '') => {
-  const arrayLign = lign.split(':');
-  return { policy: arrayLign[0], password: arrayLign[1].trim() };
+const getValue = (line = '') => {
+  const arrayLine = line.split(':');
+  return { policy: arrayLine[0], password: arrayLine[1].trim() };
 };
 
 fs.readFile('input.txt', 'utf8', (err, data) => {
