@@ -26,3 +26,5 @@ const getNumberOfTrees = (xStep, yStep, tree, inputData = '') => {
   return numberOfTrees;
 };
 console.log(getNumberOfTrees(3, 1, '#', input));
+
+module.exports = { getNumberOfTrees };
